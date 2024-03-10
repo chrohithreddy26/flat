@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Flats</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #003366;
+            color: #666565;
+        }
+
+        h1, h2 {
+            color: #003366;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        section {
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .property-listing {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+
+        .property-details h3 {
+            color: #003366;
+        }
+
+        .property-image {
+            max-width: 20px;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DreamHome Flats</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Find Your Dream Home</h2>
+        <p>Explore our selection of flats and find the perfect one for you.</p>
+    </section>
+
+    <section id="properties">
+        <div class="property-listing">
+            <div class="property-image">
+                <img src="https://images.jdmagicbox.com/real_estate/Hyderabad/SNR-THE-ELITE/635b7670b6aa3d70d503e31b/e8hp1mhd0t.jpg" width="600px" height="400px" alt="2 BHK Flat">
+            </div>
+            <div class="property-details">
+                <h3>2 BHK Flat</h3>
+                <p>Key Features: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Floor Plan: <a href="#">View Floor Plan</a></p>
+                <p>Price: $XXX,XXX</p>
+                <p>Contact Representative: John Doe - <a href="tel:+123456789">123-456-789</a></p>
+                <p>Schedule a Site Visit: <a href="#">Book Now</a></p>
+            </div>
+        </div>
+    
+        <div class="property-listing">
+            <div class="property-image">
+                <img src="data:image/jpeg;base64,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" width="600px" height="400px" alt="3 BHK Flat">
+            </div>
+            <div class="property-details">
+                <h3>3 BHK Flat</h3>
+                <p>Key Features: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Floor Plan: <a href="#">View Floor Plan</a></p>
+                <p>Price: $XXX,XXX</p>
+                <p>Contact Representative: Jane Doe - <a href="tel:+987654321">987-654-321</a></p>
+                <p>Schedule a Site Visit: <a href="#">Book Now</a></p>
+            </div>
+        </div>
+    
+        <div class="property-listing">
+            <div class="property-image">
+                <img src="data:image/jpeg;base64,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" width="600px" height="400px" alt="Duplex">
+            </div>
+            <div class="property-details">
+                <h3>Duplex</h3>
+                <p>Key Features: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Floor Plan: <a href="#">View Floor Plan</a></p>
+                <p>Price: $XXX,XXX</p>
+                <p>Contact Representative: Jake Smith - <a href="tel:+5551234567">555-123-4567</a></p>
+                <p>Schedule a Site Visit: <a href="#">Book Now</a></p>
+            </div>
+        </div>
+    
+        <!-- Add more property listings as needed -->
+    
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 DreamHome Flats. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>
+    
